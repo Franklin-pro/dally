@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const items = [{
-  key: 'english',
-  label: 'English',
+  key: 'category',
+  label: 'Category',
 }, {
-  key: 'kinyarwanda',
-  label: 'Kinyarwanda',
+  key: 'chapter',
+  label: 'Chapter',
 },
 {
-  key: 'french',
-  label: 'French',
+  key: 'article',
+  label: 'Article',
 },
 {
   key: 'iteka',
@@ -16,19 +16,24 @@ const items = [{
 }
 ]
 
+definePageMeta({
+  layout: 'default',
+  title: 'Home',
+})
+
 </script>
 
 <template>
   <UTabs :items="items" class="w-full">
     <template #item="{ item }">
-        <div v-if="item.key === 'english'" class="space-y-3">
-<SectionsEnglish/>
+        <div v-if="item.key === 'category'" class="space-y-3">
+<SectionsCategory/>
         </div>
-        <div v-else-if="item.key === 'french'" class="space-y-3">
- <SectionsFrench/>
+        <div v-else-if="item.key === 'chapter'" class="space-y-3">
+ <SectionsChapter/>
         </div>
-        <div v-else-if="item.key === 'kinyarwanda'" class="space-y-3">
- <SectionsKinyarwanda/>
+        <div v-else-if="item.key === 'article'" class="space-y-3">
+ <SectionsArticle/>
         </div>
         <div v-else-if="item.key === 'iteka'" class="space-y-3">
  <SectionsIteka/>

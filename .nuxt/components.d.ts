@@ -2,10 +2,10 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'SectionsEnglish': typeof import("../components/Sections/English.vue")['default']
-    'SectionsFrench': typeof import("../components/Sections/French.vue")['default']
+      'SectionsArticle': typeof import("../components/Sections/Article.vue")['default']
+    'SectionsCategory': typeof import("../components/Sections/Category.vue")['default']
+    'SectionsChapter': typeof import("../components/Sections/Chapter.vue")['default']
     'SectionsIteka': typeof import("../components/Sections/Iteka.vue")['default']
-    'SectionsKinyarwanda': typeof import("../components/Sections/Kinyarwanda.vue")['default']
     'SectionsSettings': typeof import("../components/Sections/Settings.vue")['default']
     'UAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
     'UAlert': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
@@ -83,10 +83,10 @@ interface _GlobalComponents {
     'UModals': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
     'USlideovers': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazySectionsEnglish': typeof import("../components/Sections/English.vue")['default']
-    'LazySectionsFrench': typeof import("../components/Sections/French.vue")['default']
+      'LazySectionsArticle': typeof import("../components/Sections/Article.vue")['default']
+    'LazySectionsCategory': typeof import("../components/Sections/Category.vue")['default']
+    'LazySectionsChapter': typeof import("../components/Sections/Chapter.vue")['default']
     'LazySectionsIteka': typeof import("../components/Sections/Iteka.vue")['default']
-    'LazySectionsKinyarwanda': typeof import("../components/Sections/Kinyarwanda.vue")['default']
     'LazySectionsSettings': typeof import("../components/Sections/Settings.vue")['default']
     'LazyUAccordion': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
     'LazyUAlert': typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
@@ -170,10 +170,10 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
-export const SectionsEnglish: typeof import("../components/Sections/English.vue")['default']
-export const SectionsFrench: typeof import("../components/Sections/French.vue")['default']
+export const SectionsArticle: typeof import("../components/Sections/Article.vue")['default']
+export const SectionsCategory: typeof import("../components/Sections/Category.vue")['default']
+export const SectionsChapter: typeof import("../components/Sections/Chapter.vue")['default']
 export const SectionsIteka: typeof import("../components/Sections/Iteka.vue")['default']
-export const SectionsKinyarwanda: typeof import("../components/Sections/Kinyarwanda.vue")['default']
 export const SectionsSettings: typeof import("../components/Sections/Settings.vue")['default']
 export const UAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
 export const UAlert: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
@@ -251,10 +251,10 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const UModals: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const USlideovers: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-export const LazySectionsEnglish: typeof import("../components/Sections/English.vue")['default']
-export const LazySectionsFrench: typeof import("../components/Sections/French.vue")['default']
+export const LazySectionsArticle: typeof import("../components/Sections/Article.vue")['default']
+export const LazySectionsCategory: typeof import("../components/Sections/Category.vue")['default']
+export const LazySectionsChapter: typeof import("../components/Sections/Chapter.vue")['default']
 export const LazySectionsIteka: typeof import("../components/Sections/Iteka.vue")['default']
-export const LazySectionsKinyarwanda: typeof import("../components/Sections/Kinyarwanda.vue")['default']
 export const LazySectionsSettings: typeof import("../components/Sections/Settings.vue")['default']
 export const LazyUAccordion: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Accordion.vue")['default']
 export const LazyUAlert: typeof import("../node_modules/@nuxt/ui/dist/runtime/components/elements/Alert.vue")['default']
